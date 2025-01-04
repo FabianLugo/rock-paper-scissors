@@ -1,3 +1,6 @@
+humanScore = 0;
+computerScore = 0;
+
 function getComputerChoice(){
     const paper="paper";
     const rock ="rock";
