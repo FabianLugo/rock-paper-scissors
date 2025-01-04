@@ -7,9 +7,9 @@ function getComputerChoice(){
     const scissors ="scissors";
 
     let randomNumber = Math.floor(Math.random()*3);
-    if(randomNumber == 1){
+    if(randomNumber == 0){
         return paper;
-    }else if(randomNumber == 2){
+    }else if(randomNumber == 1){
         return rock;
     }else{
         return scissors;
