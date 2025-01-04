@@ -1,8 +1,3 @@
-console.log(getComputerChoice());
-
-
-
-
 function getComputerChoice(){
     const paper="paper";
     const rock ="rock";
@@ -16,4 +11,27 @@ function getComputerChoice(){
     }else{
         return scissors;
     }
+}
+
+function getHumanChoice(){
+    let humanChoice = prompt("Write rock, paper or scissors:");
+
+    if(humanChoice === null){
+        return null;
+    }
+
+    humanChoice = humanChoice.toLowerCase();
+    while(humanChoice === "" || (humanChoice !="rock" && humanChoice !="paper" && humanChoice != "scissors")){
+        alert("Write a valid entry")
+        humanChoice = prompt("Write rock, paper or scissors:");
+
+        if(humanChoice === null){
+            return null;
+        }
+
+        humanChoice = humanChoice.toLowerCase();
+
+    }  
+
+    return humanChoice;    
 }
